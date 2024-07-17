@@ -45,3 +45,10 @@ Build & check memory
 docker build -t go-app .
 docker images | head -4
 ```
+
+Push to Docker Hub
+```bash
+docker build -t jakirbd/docker-compress-app .
+docker run -p --name docker-compress-app -d jakirbd/docker-compress-app:latest
+docker push jakirbd/docker-compress-app
+```
